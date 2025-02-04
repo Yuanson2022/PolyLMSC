@@ -32,18 +32,18 @@ Database availability
 
 "Data" folder: (Wait upload)
 	-Training texture
-		# Each texture originall contains 10,000 rough paths and 10,000 smooth paths
-		# We filter out some abnormal paths, so the actual path number has a slight difference
 		1. Random texture  xx.hdf5
 		2. Cube texture    xx.hdf5
+		# Each texture originall contains 10,000 rough paths and 10,000 smooth paths
+		# We filter out some abnormal paths, so the actual path number has a slight difference
 			
 
 	-Mixed texture for generalization validation
-		# Each texture contains 400 rough paths and 400 smooth paths
-		# Purely used for validation
 		1. Mixed texture 1  xx.hdf5
 		2. Mixed texture 2  xx.hdf5
-		3. Mixed texture 3	xx.hdf5
+		3. Mixed texture 3  xx.hdf5
+  		# Each texture contains 400 rough paths and 400 smooth paths
+		# Purely used for validation
 
 Data structure of HDF5 file:
 	-Mechanical sequence is in the shape of [path_num, seqential_length, featrue_dimension].
