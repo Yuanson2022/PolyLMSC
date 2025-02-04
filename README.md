@@ -14,9 +14,11 @@ Note: The code and data are being organized to achieve better reproducibility,We
 "Code" folder (Wait update):
 
 LMSC_model.py:
+
 	-Stress LMSCs
 		1. x: Input strain increment to the polycrytalline aggregate
 		2. F: Fourier coefficent of initial texture [296,1]
+
   	-Texture LMSCs
 		1. x: Input strain increment
 		2. init_ori: Initial orientations of the compact set [100,3]
@@ -27,10 +29,7 @@ LMSC_model.py:
  		# Each training texture originall contains 10,000 rough paths and 10,000 smooth paths
 		# We filter out some abnormal paths, so the actual path number has a slight difference
 		1. Random texture  xx.hdf5
-		2. Cube texture    xx.hdf5
-
-
-			
+		2. Cube texture    xx.hdf5			
 
 	-Mixed texture for generalization validation
    		# Each texture contains 400 rough paths and 400 smooth paths
