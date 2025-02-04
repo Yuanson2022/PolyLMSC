@@ -18,14 +18,14 @@ LMSC_model.py:
 	-Stress LMSCs
 		1. x: Input strain increment to the polycrytalline aggregate [batch, seq, feature_dim]
 		2. init_F: Fourier coefficent of initial texture [296,1] 
-  		3. out_state_list: Predicted stress components [batch, seq, feature_dim]
-    		4. alpha_out: Evoluation rate of state variables for robustness fine-tuning
+		3. out_state_list: Predicted stress components [batch, seq, feature_dim]
+		4. alpha_out: Evoluation rate of stress states for the robustness fine-tuning
 
   	-Texture LMSCs
 		1. x: Input strain increment
 		2. init_ori: Initial orientations of the compact set [100,3]
-    		3. out_state_list: Predicted texture in Euler angles [batch, grain_num, seq, feature_dim]
-    		4. alpha_out: Evoluation rate of state variables for robustness fine-tuning
+  		3. out_state_list: Predicted texture in Euler angles [batch, grain_num, seq, feature_dim]
+		4. alpha_out: Evoluation rate of texture states for the robustness fine-tuning
 #  --------------------------------------------------------
 "Data" folder (Wait update):
 
@@ -48,6 +48,6 @@ Content details:
  
 	-Texture sequence is in the shape of [path_num, grain_number, seqential_length, featrue_dimension].
 
-  	- Initial Fourier coefficients are provided.
+  	- Initial textures and associated Fourier coefficients are provided.
 
 We also provide code to visualization this path...
