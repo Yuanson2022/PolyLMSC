@@ -1,7 +1,6 @@
 # Code and data for the PolyLMSC model
-# It is a mean-field neural network-based crystal plasticity model
 #  --------------------------------------------------------
-The dataset and codes are attached to the article:
+PolyLMSC is a mean-field neural network-based crystal plasticity model.The dataset and codes, involved in the model development, are attached to the article:
 "Multiscale modelling with neural network-based crystal plasticity model from meso- to macroscale"
 
 If you use the dataset or codes, please cite them.
@@ -14,14 +13,13 @@ Note: The code and data are being organized to achieve better reproducibility,We
 #  --------------------------------------------------------
 "Code" folder (Wait update):
 
-LMSC_model.py: Model architecture. 
-	Stress LMSCs
-	1. x: Input strain increment to the polycrytalline aggregate
-	2. F: Fourier coefficent of initial texture [296,1]
-
-	Texture LMSCs
-	1. x: Input strain increment
-	2. init_ori: Initial orientations of the compact set [100,3]
+LMSC_model.py:
+	-Stress LMSCs
+		1. x: Input strain increment to the polycrytalline aggregate
+		2. F: Fourier coefficent of initial texture [296,1]
+  	-Texture LMSCs
+		1. x: Input strain increment
+		2. init_ori: Initial orientations of the compact set [100,3]
 #  --------------------------------------------------------
 "Data" folder (Wait update):
 
