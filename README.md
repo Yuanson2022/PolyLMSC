@@ -39,7 +39,9 @@ LMSC_model.py:
 		3. Mixed texture 3  xx.hdf5
 
 Data structure of HDF5 file:
+
 	-Mechanical sequence is in the shape of [path_num, seqential_length, featrue_dimension].
+ 
 	-Texture sequence is in the shape of [path_num, grain_number, seqential_length, featrue_dimension].
 
 We also provide code to visualization this path...
