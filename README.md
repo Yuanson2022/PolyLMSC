@@ -12,11 +12,11 @@ Affiliation: State Key Laboratory of Mechanical Systems and Vibration, Shanghai 
 #  --------------------------------------------------------
 Note:
 	The code and data are being organized to achieve better reproducibility.
-	We will be upload them before 2025/02/10
+	We will upload them before 2025/02/10
 #  --------------------------------------------------------
 Code availability
 
-"Code" folder(Wait update):
+"Code" folder (Wait update):
 
 LMSC_model.py: Model architecture. 
 	Stress LMSCs
@@ -30,7 +30,7 @@ LMSC_model.py: Model architecture.
 #  --------------------------------------------------------
 Database availability 
 
-"Data" folder:(Wait upload)
+"Data" folder: (Wait upload)
 	-Training texture
 		# Each texture originall contains 10,000 rough paths and 10,000 smooth paths
 		# We filter out some abnormal paths, so the actual path number has a slight difference
