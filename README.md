@@ -11,13 +11,13 @@ Affiliation: State Key Laboratory of Mechanical Systems and Vibration, Shanghai 
 #  --------------------------------------------------------
 Note: The code and data are being organized to achieve better reproducibility,We will upload them before 2025/02/10.
 #  --------------------------------------------------------
-"Code" folder (Wait update):
+"Code" folder:
 
 LMSC_model.py:
 
 	-Stress LMSCs
-		1. x: Input strain increment to the polycrytalline aggregate
-		2. F: Fourier coefficent of initial texture [296,1]
+		1. x: Input strain increment to the polycrytalline aggregate [batch, seq, feature_dim]
+		2. init_F: Fourier coefficent of initial texture [296,1] 
 
   	-Texture LMSCs
 		1. x: Input strain increment
