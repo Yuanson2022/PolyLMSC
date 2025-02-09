@@ -9,8 +9,6 @@ Author: Yuanzhe Hu
 
 Affiliation: State Key Laboratory of Mechanical Systems and Vibration, Shanghai Jiao Tong University
 #  --------------------------------------------------------
-Note: The code and data are being organized to achieve better reproducibility,We will upload them before 2025/02/10.
-#  --------------------------------------------------------
 "Code" folder:
 
 LMSC_model.py:
@@ -28,6 +26,7 @@ LMSC_model.py:
 		4. alpha_out: Evoluation rate of texture states for the robustness fine-tuning
 #  --------------------------------------------------------
 "Data" folder (Wait update):
+Note: The data are being organized to achieve better reproducibility, We will upload them upon acceptance.
 
 	-Training texture
  		# Each training texture originall contains 10,000 rough paths and 10,000 smooth paths
@@ -48,6 +47,6 @@ Content details:
  
 	-Texture sequence is in the shape of [path_num, grain_number, seqential_length, featrue_dimension].
 
-  	- Initial textures and associated Fourier coefficients are provided.
+  	-Initial textures and associated Fourier coefficients are provided.
 
 We also provide code to visualization this path...
