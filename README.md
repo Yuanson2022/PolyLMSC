@@ -25,8 +25,9 @@ LMSC_model.py:
   		3. out_state_list: Predicted texture in Euler angles [batch, grain_num, seq, feature_dim]
 		4. alpha_out: Evoluation rate of texture states for the robustness fine-tuning
 #  --------------------------------------------------------
-"Data" folder (Wait update):
-Note: The data are being organized to achieve better reproducibility, We will upload them upon acceptance.
+"Data" folder:
+
+Note: The data are being organized to achieve better reproducibility, we will upload them upon acceptance.
 
 	-Training texture
  		# Each training texture originall contains 10,000 rough paths and 10,000 smooth paths
