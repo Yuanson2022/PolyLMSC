@@ -25,29 +25,25 @@ LMSC_model.py:
   		3. out_state_list: Predicted texture in Euler angles [batch, grain_num, seq, feature_dim]
 		4. alpha_out: Evoluation rate of texture states for the robustness fine-tuning
 #  --------------------------------------------------------
-"Data" folder:
+Data availability:
 
-Note: The data are being organized to achieve better reproducibility, we will upload them upon acceptance.
+Note: The complete dataset is available at https://zenodo.org/records/15742872
 
-	-Training texture
- 		# Each training texture originall contains 10,000 rough paths and 10,000 smooth paths
-		# We filter out some abnormal paths, so the actual path number has a slight difference
-		1. Random texture  xx.hdf5
-		2. Cube texture    xx.hdf5			
+Content Details:
+-The repository contains two .rar files, corresponding to the mechanical sequence and texture sequence used in the paper.
 
-	-Mixed texture for generalization validation
-   		# Each texture contains 400 rough paths and 400 smooth paths
-		# Purely used for validation
-		1. Mixed texture 1  xx.hdf5
-		2. Mixed texture 2  xx.hdf5
-		3. Mixed texture 3  xx.hdf5
+-Mechanical Sequence：(1) Stored under the 'data' group in HDF5 files; (2) Shape: [path_num, sequence_length, feature_dimension], with sequence_length = 2500; Feature dimension includes 12 variables:[L11, L12, L21, L22, ε11, ε22, ε33, ε12, σ11, σ22, σ33, σ12]; Please follow this format during reproduction.
 
-Content details:
+-Texture Sequence:(1) Stored under the 'tex' group in HDF5 files;(2) Shape: [path_num, grain_number, sequence_length, feature_dimension], with sequence_length = 100, and feature_dimension = 3 (Euler angles).
 
-	-Mechanical sequence is in the shape of [path_num, seqential_length, featrue_dimension].
- 
-	-Texture sequence is in the shape of [path_num, grain_number, seqential_length, featrue_dimension].
+-Training texture
+	# Random texture / Cube texture
+	# Each training texture originall contains nearly 10,000 rough paths and 10,000 smooth paths
+	# We filter out some abnormal paths, so the actual path number has a slight difference
+		
+-Mixed textures for generalization validation
+	# Mixed texture 1/2/3
+	# Each texture contains 400 rough paths and 400 smooth paths
+	# Purely used for validation
 
-  	-Initial textures and associated Fourier coefficients are provided.
-
-We also provide code to visualization this path...
+-Additional Files: (1) Fourier coefficients of each initial textures are provided in 'stress-data'; (2) A script for visualizing individual loading paths is provided in the stress-data.rar archive.
