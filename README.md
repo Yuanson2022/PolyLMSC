@@ -37,7 +37,7 @@ Content Details:
 
 -Texture Sequence: (1) Stored under the 'tex' group in HDF5 files;(2) Shape: [path_num, grain_number, sequence_length, feature_dimension], with sequence_length = 100, and feature_dimension = 3 (Euler angles).
 
--Training texture (Random texture / Cube texture): Each training texture originall contains nearly 10,000 rough paths and 10,000 smooth paths; We filter out some abnormal paths, so the actual path number has a slight difference.
+-Training texture (Random texture / Cube texture): Each training texture originall contains around 10,000 rough paths and 10,000 smooth paths; We filter out some abnormal paths, so the actual path number has a slight difference.
 		
 -Mixed textures for generalization validation (Mixed texture 1/2/3): Each texture contains 400 rough paths and 400 smooth paths; Purely used for validation.
 
