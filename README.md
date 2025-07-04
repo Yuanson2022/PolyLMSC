@@ -38,12 +38,20 @@ Content Details:
 
 -Training texture
 	# Random texture / Cube texture
+ 
 	# Each training texture originall contains nearly 10,000 rough paths and 10,000 smooth paths
+ 
 	# We filter out some abnormal paths, so the actual path number has a slight difference
+ 
 		
 -Mixed textures for generalization validation
 	# Mixed texture 1/2/3
+ 
 	# Each texture contains 400 rough paths and 400 smooth paths
+ 
 	# Purely used for validation
 
--Additional Files: (1) Fourier coefficients of each initial textures are provided in 'stress-data'; (2) A script for visualizing individual loading paths is provided in the stress-data.rar archive.
+-Additional Files: 
+	(1) The Fourier coefficients of initial texture are provided in each sub-path of 'stress-data'; 
+ 
+ 	(2) A script for visualizing individual loading paths is provided in the 'stress-data.rar'.
