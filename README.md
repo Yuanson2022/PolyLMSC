@@ -33,7 +33,7 @@ Content Details:
 
 -The repository contains two .rar files, corresponding to the mechanical sequence and texture sequence used in the paper.
 
--Mechanical Sequence：(1) Stored under the 'data' group in HDF5 files; (2) Shape: [path_num, sequence_length, feature_dimension], with sequence_length = 2500; Feature dimension includes 12 variables:[L11, L12, L21, L22, ε11, ε22, ε33, ε12, σ11, σ22, σ33, σ12]; Please follow this format during reproduction.
+-Mechanical Sequence：(1) Stored under the 'data' group in HDF5 files; (2) Shape: [path_num, sequence_length, feature_dimension], with sequence_length = 2500; Feature dimension includes 12 variables:[L11, L12, L21, L22, ε11, ε22, ε33, ε12, σ11, σ22, σ33, σ12].
 
 -Texture Sequence:(1) Stored under the 'tex' group in HDF5 files;(2) Shape: [path_num, grain_number, sequence_length, feature_dimension], with sequence_length = 100, and feature_dimension = 3 (Euler angles).
 
@@ -50,8 +50,6 @@ Content Details:
  
 	# Purely used for validation
 
--Additional Files: 
-
-	(1) The Fourier coefficients of initial texture are provided in each sub-path of 'stress-data'; 
+-The Fourier coefficients of initial texture are provided in each sub-path of 'stress-data'.
  
- 	(2) A script for visualizing individual loading paths is provided in the 'stress-data.rar'.
+-A script for visualizing individual loading paths is provided in the 'stress-data.rar'.
