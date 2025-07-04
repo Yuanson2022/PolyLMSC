@@ -35,7 +35,7 @@ Content Details:
 
 -Mechanical Sequence: (1) Stored under the 'data' group in HDF5 files; (2) Shape: [path_num, sequence_length, feature_dimension], with sequence_length = 2500; Feature dimension includes 12 variables:[L11, L12, L21, L22, ε11, ε22, ε33, ε12, σ11, σ22, σ33, σ12].
 
--Texture Sequence: (1) Stored under the 'tex' group in HDF5 files;(2) Shape: [path_num, grain_number, sequence_length, feature_dimension], with sequence_length = 100, and feature_dimension = 3 (Euler angles).
+-Texture Sequence: (1) Stored under the 'tex' group in HDF5 files;(2) Shape: [path_num, grain_number, sequence_length, feature_dimension], with sequence_length = 101, and feature_dimension = 3 (Euler angles).
 
 -Training texture (Random texture / Cube texture): Each training texture originall contains around 10,000 rough paths and 10,000 smooth paths; We filter out some abnormal paths, so the actual path number has a slight difference.
 		
